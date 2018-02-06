@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tichucounter.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="centerCrop"
+           android:src="@drawable/tichuback"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           android:id="@+id/MommaLinear">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Team A"
+                   android:layout_gravity="center_horizontal"
+                   android:textSize="15sp"
+                   android:textColor="#616161"
+                   android:fontFamily="sans-serif-light"
+                   android:layout_margin="16dp"/>
+
+               <TextView
+                   android:id="@+id/team_a_score"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginBottom="24dp"
+                   android:text="0"
+                   android:textSize="55sp"
+                   android:textColor="#616161"
+                   android:fontFamily="sans-serif-light"/>
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="GrandforTeamA"
+                   android:text="Grand Tichu" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="TichuforTeamA"
+                   android:text="Tichu" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="TenforTeamA"
+                   android:text="+10" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="FiveforTeamA"
+                   android:text="+5" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="DrakeforTeamA"
+                   android:text="Drake" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="PhoenixforTeamA"
+                   android:text="Phoenix" />
+
+           </LinearLayout>
+
+           <View
+               android:layout_width="0.2dp"
+               android:layout_height="match_parent"
+               android:background="@android:color/darker_gray"
+               android:layout_marginTop="16dp"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Team B"
+                   android:layout_gravity="center_horizontal"
+                   android:textSize="15sp"
+                   android:textColor="#616161"
+                   android:fontFamily="sans-serif-light"
+                   android:layout_margin="16dp"/>
+
+               <TextView
+                   android:id="@+id/team_b_score"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginBottom="24dp"
+                   android:text="0"
+                   android:textSize="55sp"
+                   android:textColor="#616161"
+                   android:fontFamily="sans-serif-light"/>
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="GrandforTeamB"
+                   android:text="Grand Tichu" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="TichuforTeamB"
+                   android:text="Tichu" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="TenforTeamB"
+                   android:text="+10" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="FiveforTeamB"
+                   android:text="+5" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="DrakeforTeamB"
+                   android:text="Drake" />
+
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginRight="24dp"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginBottom="8dp"
+                   android:onClick="PhoenixforTeamB"
+                   android:text="Phoenix" />
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/MommaLinear"
+           android:layout_margin="16dp"
+           android:text="Reset"
+           android:onClick="Reset"/>
+
+   </RelativeLayout>
+
+</ScrollView>
